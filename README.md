@@ -39,7 +39,7 @@ Supports live utility tracking, community posts, study groups, and instant notif
 
 ## 📁 Project Structure
 
-
+```text
 src/
 ├── components/ # Reusable UI components (Button, Card, PostCard, UtilityCard)
 ├── context/ # Global state (AuthContext, BoardContext)
@@ -48,7 +48,7 @@ src/
 ├── services/ # API & Socket.IO services
 ├── App.jsx # App root
 └── main.jsx # Entry point
-
+```
 
 ---
 
@@ -78,8 +78,11 @@ GOOGLE_CALLBACK_URL=http://localhost:4000/api/v1/auth/google/callback
 MICROSOFT_CLIENT_ID=
 MICROSOFT_CLIENT_SECRET=
 MICROSOFT_CALLBACK_URL=http://localhost:4000/api/v1/auth/microsoft/callback
+```
 4. Run development server
+ ```  
 npm run dev
+```
 ```
 ```
 Open http://localhost:5173
