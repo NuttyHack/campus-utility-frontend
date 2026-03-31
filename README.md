@@ -35,23 +35,6 @@ src/
 ├── 🚀 App.jsx          # Router & Global Providers
 └── 📍 main.jsx         # Application entry point
 
-### 🧩 `src/components`
-- **ui/**: Basic elements like `Button.jsx` or `Input.jsx`.
-- **features/**: Complex components like `PostCard.jsx` (which contains logic for likes/comments).
-
-### 📄 `src/pages`
-Contains full screen views. 
-- `Dashboard.jsx`: The main hub showing Labs and the Feed.
-- `Auth/`: Contains Login and Registration screens.
-
-### 🔌 `src/services`
-- `api.js`: Centralized Axios configuration. **Do not write raw fetch calls in components.** Use this service.
-- `socket.js`: Handles the global WebSocket connection for real-time updates.
-
-### 🧠 `src/context`
-Handles global "State." If you need to check if a user is logged in from any page, use the `AuthContext`.
-
----
 
 ## 🌿 Branching Strategy (Strict)
 **Do not push directly to `main` or `development`.**
