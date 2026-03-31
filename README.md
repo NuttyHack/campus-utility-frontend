@@ -48,14 +48,14 @@ Maintain Consistency: Every padding, margin, and color comes from a standardized
 
 Mobile-First Development: We use prefixes like md: and lg: to ensure the dashboard looks perfect on a student's phone first, then their laptop.
 
-##🔌 Service-Oriented Architecture (Axios & Socket.io)
+## 🔌 Service-Oriented Architecture (Axios & Socket.io)
 We separate our "View" from our "Data."
 
 Axios: We use a centralized Axios instance in services/api.js. This handles our Base URL and automatically attaches our JWT Token to every request header.
 
 Socket.io: This is our live "Nervous System." Instead of users refreshing the page, we listen for events like lab_update or new_post to update the React state in real-time.
 
-##🧠 State Management (Context + Zustand)
+## 🧠 State Management (Context + Zustand)
 Context API: Used for "Global Static" data like User Authentication and Theme.
 
 Zustand: Used for "Fast-Changing" data like the Live Feed and Lab Statuses. It’s lighter than Redux and much faster for real-time updates.
