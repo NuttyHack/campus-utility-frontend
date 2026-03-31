@@ -5,7 +5,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3-teal?logo=tailwind-css)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen) <!-- Replace with actual CI badge -->
-![Demo](https://img.shields.io/badge/Demo-Live-blue) <!-- Optional live demo link -->
+
 
 Frontend for the **Campus Utility Board**, a hyper-local, real-time campus web app for students.  
 Supports live utility tracking, community posts, study groups, and instant notifications.
