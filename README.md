@@ -12,24 +12,28 @@ This is the official React frontend for the Campus Utility Board. A mobile-first
 
 ---
 
-📂 Project Structure Guide
-To ensure scalability and maintainability, all developers MUST adhere to the following directory structure:
+---
+
+## 📂 Project Structure Guide
+To ensure scalability and maintainability, all developers **MUST** adhere to the following directory structure:
+
+```text
 src/
-├── 🎨 assets/          # Global styles (CSS), images, and SVGs.
-├── 🧱 components/      # Reusable UI building blocks.
-│   ├── ui/             # Atomic components (Buttons, Inputs, Modals).
-│   ├── layout/         # Structural components (Navbar, Sidebar, Footer).
-│   └── features/       # Feature-specific logic (PostCard, LabStatusCard).
-├── 🧠 context/         # React Context providers (AuthContext, SocketContext).
-├── 🎣 hooks/           # Custom React hooks (useAuth, useSocketConnection).
-├── 📄 pages/           # Full-screen views and route components.
-├── 🔌 services/        # External communication logic.
-│   ├── api.js          # Axios configuration & JWT Interceptors.
-│   └── socket.js       # Socket.io event listeners & emitters.
-├── 📦 store/           # Global State Management (Zustand/Redux).
-├── 🛠️ utils/           # Pure helper functions (Date formatting, Validators).
-├── 🚀 App.jsx          # Main Router and Global Provider wrapper.
-└── 📍 main.jsx         # Application entry point.
+├── 🎨 assets/          # Global styles, images, and SVGs
+├── 🧱 components/      # Reusable UI building blocks
+│   ├── ui/             # Atomic components (Buttons, Inputs)
+│   ├── layout/         # Structural (Navbar, Sidebar, Footer)
+│   └── features/       # Feature-specific (PostCard, LabCard)
+├── 🧠 context/         # React Context (Auth, Socket)
+├── 🎣 hooks/           # Custom React hooks (useAuth)
+├── 📄 pages/           # Full-screen views (Dashboard, Login)
+├── 🔌 services/        # API & Socket communication
+│   ├── api.js          # Axios instance & Interceptors
+│   └── socket.js       # Socket events & listeners
+├── 📦 store/           # Global State (Zustand)
+├── 🛠️ utils/           # Helper functions (Formatters)
+├── 🚀 App.jsx          # Router & Global Providers
+└── 📍 main.jsx         # Application entry point
 
 ### 🧩 `src/components`
 - **ui/**: Basic elements like `Button.jsx` or `Input.jsx`.
