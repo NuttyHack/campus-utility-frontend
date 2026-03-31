@@ -38,10 +38,10 @@ src/
 ## Deep Dive: Our Frontend Engineering Standard
 To build a professional-grade campus tool, we aren't just "writing code"; we are building a synchronized system. Here is the breakdown of our core stack:
 
-##⚡ Vite & React 18
+## ⚡ Vite & React 18
 We use Vite because it provides an almost instant Hot Module Replacement (HMR). Time is money. React 18 allows us to use Concurrent Rendering, ensuring the UI remains responsive even when we are processing heavy real-time data from the campus labs.
 
-##🎨 Tailwind CSS (Utility-First)
+## 🎨 Tailwind CSS (Utility-First)
 We do not write raw CSS files. We use Tailwind to:
 
 Maintain Consistency: Every padding, margin, and color comes from a standardized design token.
