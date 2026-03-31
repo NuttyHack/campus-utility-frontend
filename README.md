@@ -57,7 +57,7 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/campus-utility-board-frontend.git
+git clone https://github.com/NuttyHack/campus-utility-board-frontend.git
 cd campus-utility-board-frontend
 ```
 2. Install dependencies
