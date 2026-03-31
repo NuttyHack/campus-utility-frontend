@@ -84,7 +84,7 @@ MICROSOFT_CALLBACK_URL=http://localhost:4000/api/v1/auth/microsoft/callback
 npm run dev
 ```
 ```
-```
+
 Open http://localhost:5173
  in your browser.
 ```
