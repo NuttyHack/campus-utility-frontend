@@ -34,14 +34,40 @@ src/
 ├── 🛠️ utils/           # Helper functions (Formatters)
 ├── 🚀 App.jsx          # Router & Global Providers
 └── 📍 main.jsx         # Application entry point
+```
+## Deep Dive: Our Frontend Engineering Standard
+To build a professional-grade campus tool, we aren't just "writing code"; we are building a synchronized system. Here is the breakdown of our core stack:
 
+##⚡ Vite & React 18
+We use Vite because it provides an almost instant Hot Module Replacement (HMR). Time is money. React 18 allows us to use Concurrent Rendering, ensuring the UI remains responsive even when we are processing heavy real-time data from the campus labs.
 
-## 🌿 Branching Strategy (Strict)
-**Do not push directly to `main` or `development`.**
+##🎨 Tailwind CSS (Utility-First)
+We do not write raw CSS files. We use Tailwind to:
 
-1. `main`: Production-ready code only.
-2. `development`: The "Integration" branch.
-3. `feature/name`: Create a branch from `development` for your specific task.
-   - Example: `feature/login-ui` or `feature/socket-integration`
+Maintain Consistency: Every padding, margin, and color comes from a standardized design token.
 
-**Workflow:** Create Branch -> Code -> Push -> Open Pull Request (PR) -> Peer Review -> Merge to Development.
+Mobile-First Development: We use prefixes like md: and lg: to ensure the dashboard looks perfect on a student's phone first, then their laptop.
+
+##🔌 Service-Oriented Architecture (Axios & Socket.io)
+We separate our "View" from our "Data."
+
+Axios: We use a centralized Axios instance in services/api.js. This handles our Base URL and automatically attaches our JWT Token to every request header.
+
+Socket.io: This is our live "Nervous System." Instead of users refreshing the page, we listen for events like lab_update or new_post to update the React state in real-time.
+
+##🧠 State Management (Context + Zustand)
+Context API: Used for "Global Static" data like User Authentication and Theme.
+
+Zustand: Used for "Fast-Changing" data like the Live Feed and Lab Statuses. It’s lighter than Redux and much faster for real-time updates.
+
+## 🛠️ Developer Workflow (The "Safe" Way)
+Atomic Design: Before building a full page, check src/components/ui. If a button exists, use it. Do not create a new one.
+
+Strict Typing (Prop-Types): Always define what data your component expects. This prevents "undefined" crashes.
+
+Environment Variables: Never hardcode the Backend URL. Always use import.meta.env.VITE_API_URL.
+
+## 🧪 Testing & Quality
+Linting: We use ESLint to ensure everyone’s code looks the same. Run npm run lint before you push.
+
+Pull Requests: Every PR must be reviewed by at least one other team member. We check for logic errors and CSS inconsistencies.
