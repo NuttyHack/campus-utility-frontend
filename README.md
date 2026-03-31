@@ -12,27 +12,24 @@ This is the official React frontend for the Campus Utility Board. A mobile-first
 
 ---
 
-## 📂 Project Structure Guide
-To maintain a clean codebase, all developers MUST follow this folder structure:
-
+📂 Project Structure Guide
+To ensure scalability and maintainability, all developers MUST adhere to the following directory structure:
 src/
-├── assets/             # Images, SVGs, and Global Styles
-├── components/         # Reusable UI Atoms (Buttons, Inputs, Cards)
-│   ├── ui/             # Generic components (Button, Modal)
-│   ├── layout/         # Navigation, Sidebar, Footer
-│   └── features/       # Feature-specific (PostCard, LabCard)
-├── context/            # React Context (AuthContext, SocketContext)
-├── hooks/              # Custom React Hooks (useAuth, useSocket)
-├── pages/              # Full page views (Dashboard, Login, Profile)
-├── services/           # API and Socket connection logic
-│   ├── api.js          # Axios instance & interceptors
-│   └── socket.js       # Socket.io configuration
-├── store/              # Global State (Zustand or Redux)
-├── utils/              # Helper functions (date formatting, validation)
-├── App.jsx             # Main Routing logic
-└── main.jsx            # Entry point
-
-To maintain a clean codebase, all developers MUST follow this folder structure:
+├── 🎨 assets/          # Global styles (CSS), images, and SVGs.
+├── 🧱 components/      # Reusable UI building blocks.
+│   ├── ui/             # Atomic components (Buttons, Inputs, Modals).
+│   ├── layout/         # Structural components (Navbar, Sidebar, Footer).
+│   └── features/       # Feature-specific logic (PostCard, LabStatusCard).
+├── 🧠 context/         # React Context providers (AuthContext, SocketContext).
+├── 🎣 hooks/           # Custom React hooks (useAuth, useSocketConnection).
+├── 📄 pages/           # Full-screen views and route components.
+├── 🔌 services/        # External communication logic.
+│   ├── api.js          # Axios configuration & JWT Interceptors.
+│   └── socket.js       # Socket.io event listeners & emitters.
+├── 📦 store/           # Global State Management (Zustand/Redux).
+├── 🛠️ utils/           # Pure helper functions (Date formatting, Validators).
+├── 🚀 App.jsx          # Main Router and Global Provider wrapper.
+└── 📍 main.jsx         # Application entry point.
 
 ### 🧩 `src/components`
 - **ui/**: Basic elements like `Button.jsx` or `Input.jsx`.
