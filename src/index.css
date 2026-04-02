@@ -1,0 +1,63 @@
+/* 1. The Tailwind Connection (v4 Style) */
+@import "tailwindcss";
+
+/* 2. Your Professional Branding (Lead Designer Level) */
+@theme {
+  /* Campus Colors from your config */
+  --color-campus-blue: #0057B7;
+  --color-campus-gold: #FFDD00;
+  --color-campus-danger: #D32F2F;
+  --color-campus-success: #388E3C;
+  
+  /* Modern Typography */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  /* Custom Shadows for Savuswa's Cards */
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* 3. Global Base Styles */
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    @apply bg-gray-50 text-gray-900 antialiased;
+    /* This ensures a smooth "App" feel on mobile */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Headings look better with slightly tighter tracking */
+  h1, h2, h3 {
+    @apply tracking-tight font-bold;
+  }
+}
+
+/* 4. Custom Scrollbar for the "Premium" Feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 5. Utility Classes for Savuswa */
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
